@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage{mathbbol}
+\begin{document}
+    \begin{flushright}
+        02 de Febrero, 2023 \linebreak
+        Aguilar Sánchez Diego Isaac
+    \end{flushright}
+    \title{Sistema de Ecuaciones No Lineales}
+    \section*{Definición 1.1}
+    Una función que satisface el principio de superposición se dice que es entonces una función lineal. La propiedad de superposición se puede definir mediante dos propiedades.
+    \begin{center}
+        1.- {$f(x1 + x2) = f(x1) + f(x2)$} - Aditividad
+    \end{center}
+    \begin{center}
+        2.- {$f(\alpha x1) = \alpha f(x1)$} - Homogeneidad
+    \end{center}
+    \small{Nota: Si una función no cumple con estas propiedades, decimos entonces que es una función no lineal.}
+    \section*{Definición 1.2}
+    Un sistema de ecuaciones no lineales es un conjunto de su forma.
+    \begin{center}
+        $fi(x1, x2, x3, \dots, xn) = 0$
+    \end{center}
+    \begin{center}
+        $f2(x1, x2, x3, \dots, xn) = 0$
+    \end{center}
+    \begin{center}
+        \dots
+    \end{center}
+    \begin{center}
+        $fn(x1, x2, x3, \dots, xn) = 0$
+    \end{center}
+    donde la función $f1$ se puede ver como un "mapeo" del vector $(x1, x2, x3, \dots, xn)$ de $\mathbb{R}n$ a $\mathbb{R}$.  Este sistema de $n$ ecuaciones no lineales en $n$ variables también puede tener la forma:
+    \begin{center}
+        $f(x1, x2, x3, \dots, xn)
+        =(f(x1, x2, x3, \dots, xn), f2(x1, x2, x3, \dots, xn),\dots, fn(x1, x2, x3, \dots, xn))$
+
+    \end{center} 
+    Si se utiliza notación vectorial para representar las variables $x1, x2, \dots, xn$ entonces el sistema asume la forma 
+    \begin{center}
+        $F(\overrightarrow{x} = 0 )$
+    \end{center}
+    \section*{Definición 1.3}
+    Una solución de un sistema de ecuaciones/funciones $f1, f2, f3, f4, \dots, fn$ de $n$ funciones en $n$ variables es un punto $(x1, x2, x3, \dots, xn) \in \mathbb{R}n$ tal que 
+    \begin{center}
+        $f1(a1, a2, a3, \dots, an) = f2(a1, a2, a3, \dots, an) = \dots = fn(a1, a2, a3, \dots, an) = 0  $
+    \end{center}
+    \small{Nota: Debido a que los sistemas no lineales no se comportan tan bien como los lineales al momento de encontrar un modo para su solución, se usarán procedimientos llamados \it{métodos iterativos}.}
+    \section*{Definición 1.4}
+    Un método iterativo es un procedimiento que se repite una y otra vez para encontrar la raíz de una ecuación o la solución de un sistema de ecuaciones.
+    \section*{Definición 1.5}
+    Decimos que una sucesión converge si tiene límite.
+    \section*{}
+    En temas anteriores cuando se ha ocupado de estudiar procedimientos de resolución aproximada de ecuaciones de la forma:
+    \begin{center}
+        $f(x) = 0$
+    \end{center}
+    continuemoas con la misma tarea, pero con un enfoue diferente; es decir con ecuaciones del tipo:
+    \begin{center}
+        $g(x) = x$
+    \end{center}
+    Lleva poco tiempo darse cuenta de que las expresiones anteriores son de alguna forma equivalentes, ciertamente dada la ecuación $f(x) = 0$ y una solución suya $p$ existe, entonces una función $g$ (y más de una) tal que la ecuación $x=g(x)$ tiene a $p$ por solución, es decir, $p=g(p)$. Y de forma contraria, si $p$ es una solución de $x=g(x)$ entonces $p$ es un cero de la función definida mediante:
+    \begin{center}
+        $f(x) = x - g(x)$
+    \end{center}
+    \section*{Notas Personales}
+    No importa la diferencia de las funciones, la cantidad, o su complejidad; si gráficamente hay un punto en el que convergan, sabemos que $g(x)=x$, lo que significa que siempre vamos a tener el mismo valor en dado punto.
+    Queremos construir el método iterativo que nos permita llegar al punto de convergencia.
+\end{document}
