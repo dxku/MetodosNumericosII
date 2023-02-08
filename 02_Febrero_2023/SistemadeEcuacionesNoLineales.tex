@@ -49,7 +49,6 @@
     Un método iterativo es un procedimiento que se repite una y otra vez para encontrar la raíz de una ecuación o la solución de un sistema de ecuaciones.
     \section*{Definición 1.5}
     Decimos que una sucesión converge si tiene límite.
-    \section*{}
     En temas anteriores cuando se ha ocupado de estudiar procedimientos de resolución aproximada de ecuaciones de la forma:
     \begin{center}
         $f(x) = 0$
@@ -65,4 +64,36 @@
     \section*{Notas Personales}
     No importa la diferencia de las funciones, la cantidad, o su complejidad; si gráficamente hay un punto en el que convergan, sabemos que $g(x)=x$, lo que significa que siempre vamos a tener el mismo valor en dado punto.
     Queremos construir el método iterativo que nos permita llegar al punto de convergencia.
+    \newpage
+    \begin{flushright}
+        07 de Febrero, 2023
+    \end{flushright}
+    \section*{Definición 1.6}
+    Sea
+    \begin{center}
+         $F: \mathbb{D} \subset \mathbb{R} \rightarrow \mathbb{R}$. Si $F(\overrightarrow{p})= \overrightarrow{p}$
+    \end{center}
+    para algún $\overrightarrow{p} \in D$, entonces $\overrightarrow{p}$ se dice que es un punto fijo de F.
+    \section*{Definición 1.7}
+    Sea
+    \begin{center}
+        $G: D \subset \mathbb{R}^{n} \rightarrow \mathbb{R}^{n}$
+    \end{center}
+    es contractivo o lipschitana en un conjunto $D_{o} \subset D$, si existe una ocnstante $\alpha < 1$ tal que
+    \begin{center}
+        $||G(\overrightarrow{x}) - G(\overrightarrow{y})|| \leq \alpha||\overrightarrow{x} - \overrightarrow{y}|| \forall \overrightarrow{x}, \overrightarrow{y} \in D$
+    \end{center}
+    \section*{Nota}
+    En el espacio vectorial de dimensión $n$ la distancia 
+    \begin{center}
+        $p(\overrightarrow{x}, \overrightarrow{y}) = ||\overrightarrow{x} - \overrightarrow{y}||$
+    \end{center}
+    puede ser la norma $- \infty$, la norma euclidiana o cualquier otra norma. Es decir
+    \begin{center}
+        $p(\overrightarrow{x}, \overrightarrow{y})=\left\{ 
+            p_{\infty}(\overrightarrow{x}, \overrightarrow{y}) = max|x_{i}-y_{i}| \linebreak
+            p_{1}(\overrightarrow{x}, \overrightarrow{y}) = \sum_{i = 1}^{n}|x_{i} - y_{i}|   \linebreak
+            p_{2}(\overrightarrow{x}, \overrightarrow{y}) = \sum_{i = 1}^{n}\{(x_{i} - y_{i})^{2}\}^{1/2}\right\}
+        $
+    \end{center}
 \end{document}
